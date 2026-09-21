@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fmcui - Apple Foundation Models Chat</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <img src="../fmcui/public/icon.png" alt="fmcui Logo" />
+      fmcui
+    </div>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#install">How to Install</a>
+      <a href="https://github.com/suyash-03/fmcui" target="_blank">GitHub</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1 class="fade-in">Apple Foundation Models.<br>Native on macOS.</h1>
+    <p class="fade-in">A beautiful, highly-performant chat interface built specifically to interact with Apple Foundation Models running locally on your device.</p>
+    
+    <div class="cta-group fade-in">
+      <a href="https://github.com/suyash-03/fmcui/releases" class="btn btn-primary">Download DMG (macOS 27+)</a>
+      <a href="https://github.com/suyash-03/fmcui" target="_blank" class="btn btn-secondary">View Source on GitHub</a>
+    </div>
+
+    <div class="hero-image-wrapper fade-in">
+      <!-- Use the screenshot the user took -->
+      <img src="assets/chat-interface.png" alt="fmcui App Interface" class="hero-image" onerror="this.src='https://via.placeholder.com/1000x650/1c1c1e/86868b?text=Place+chat-interface.png+in+assets+folder'">
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section id="features">
+    <div class="section-header fade-in">
+      <h2>Why use fmcui?</h2>
+      <p>Built for the modern Apple ecosystem with speed and privacy in mind.</p>
+    </div>
+    
+    <div class="features-grid">
+      <div class="feature-card glass fade-in">
+        <div class="feature-icon">🔒</div>
+        <h3>100% Local & Private</h3>
+        <p>No data leaves your machine. Your chats with the foundation model run entirely on-device using the Apple Foundation Models Serve endpoint.</p>
+      </div>
+      
+      <div class="feature-card glass fade-in">
+        <div class="feature-icon">✨</div>
+        <h3>Native macOS Feel</h3>
+        <p>Designed to blend seamlessly with macOS Golden Gate, using translucent window treatments, vibrant sidebars, and native window controls.</p>
+      </div>
+      
+      <div class="feature-card glass fade-in">
+        <div class="feature-icon">⚡️</div>
+        <h3>Lightning Fast</h3>
+        <p>Optimized streaming architecture means you see tokens as they are generated with virtually zero latency, utilizing the Apple Silicon Neural Engine.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Installation Guide Section -->
+  <section id="install">
+    <div class="section-header fade-in">
+      <h2>Get Started in Seconds</h2>
+      <p>No terminal required for end-users. Just a standard macOS app.</p>
+    </div>
+
+    <div class="install-container">
+      <div class="install-step glass fade-in">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Download the latest release</h3>
+          <p>Go to the <a href="https://github.com/suyash-03/fmcui/releases" target="_blank" style="color: var(--accent);">GitHub Releases</a> page and download the <code>.dmg</code> file for your architecture.</p>
+        </div>
+      </div>
+
+      <div class="install-step glass fade-in">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Install to Applications</h3>
+          <p>Double-click the downloaded <code>fmcui-xxx.dmg</code> file to mount it. Drag the <b>fmcui</b> app icon into the <b>Applications</b> folder shortcut right next to it.</p>
+        </div>
+      </div>
+
+      <div class="install-step glass fade-in">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Launch and Chat</h3>
+          <p>Open <b>fmcui</b> from your Applications folder or Spotlight. <i>(Note: You must be running macOS 27 Golden Gate or later for the foundation models to be available)</i>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p><b>fmcui</b> is open source software.</p>
+      <a href="https://github.com/suyash-03/fmcui" target="_blank">Contribute on GitHub</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
