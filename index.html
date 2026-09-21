@@ -96,6 +96,15 @@
       <div class="install-step glass fade-in">
         <div class="step-number">3</div>
         <div class="step-content">
+          <h3>Bypass macOS Gatekeeper</h3>
+          <p>Because the app is open-source and not signed by a paid Apple Developer account, macOS might say the app is "damaged". To fix this, open your Terminal and run:</p>
+          <div class="terminal-block">xattr -cr /Applications/fmcui.app</div>
+        </div>
+      </div>
+
+      <div class="install-step glass fade-in">
+        <div class="step-number">4</div>
+        <div class="step-content">
           <h3>Launch and Chat</h3>
           <p>Open <b>fmcui</b> from your Applications folder or Spotlight. <i>(Note: You must be running macOS 27 Golden Gate or later for the foundation models to be available)</i>.</p>
         </div>
